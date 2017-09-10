@@ -1,0 +1,66 @@
+<!-- James Prendergast HTML file -->
+<!--this will call to say that this page will be in english-->
+<html lang="en">
+<head>
+
+  <!--this is the title of the webpage-->
+  <title>Giphy API JSON</title>
+  <!--this is the favicon call, it will display "giphy.png" next to the tabs title-->
+  <link rel="icon" href="images/giphy.png">
+
+      <link rel="stylesheet" type="text/css"  href="style.css">
+      <!--this will call the javascript file that will get the JSON and make the html elements to display them-->
+      <script src="functions.js"></script>
+
+      <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#ff0000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#ff0000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#ff0000">
+
+<!--this will call the manifest file which will make changes to the web app when on a mobile device-->
+  <link rel="manifest" href="manifest.json">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><meta charset="utf-8">
+
+
+</head>
+<body>
+
+
+
+<!--this is the one of the main classes, which is the header-->
+<div class="header" id="head">
+  <!--this is what the header will be called-->
+<h1> GIPHY'S API TEST </h1>
+</div>
+
+<div class="topnav">
+  <!--these are the buttons that will call the function to display the images-->
+  <button onclick="delete3('https://api.giphy.com/v1/gifs/search?q=cat&api_key=e11449f8c0fc46b685601b1c848f35b7&limit=100')">Display Cats</button>
+  <button onclick="delete3('https://api.giphy.com/v1/gifs/search?q=dog&api_key=e11449f8c0fc46b685601b1c848f35b7&limit=100')">Display Dogs</button>
+<!--these are link to provide pagination to show another sets of 25 images-->
+<p id =links>
+
+</p>
+</div>
+
+<!--this calls the script to use jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!--this is where the images will be built, it will be append onto the div id "imagediv2"-->
+<div class=container style="float:left">
+<div id="imageDiv2"  style="float:left"></div>
+</div>
+
+
+<!--this is the call of the footer that is shown at the end of a webpage-->
+<div class="footer">Giphy's API Test Footer</div>
+
+</body>
+</html>
+
+</script>
+
+
+</body>
+</html>
