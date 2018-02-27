@@ -1,4 +1,5 @@
 /*James Prendergast JavaScript file */
+//for more help, go to this link https://www.w3schools.com/jquery/ajax_get.asp
 
 //this function is called when the web page is loaded
 window.onload = function any_function_name()
@@ -22,7 +23,7 @@ var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=e114
 xhr.done(function(data) {
  console.log("success got data", data);
 });
-
+//data - contains the resulting data from the request
 }
 
 //this function is called when the display buttons are pressed index.html
